@@ -13,7 +13,7 @@ class Interface{
             document.querySelector("#elements").innerHTML+=`
                 <div class="element" data-id=${task.TaskId}>
                     <span id="content">${task.TaskContent}</span>
-                    <div id="button"><button class="btn btn-small btn-outline-success ok">ok</button></div>
+                    <div id="button"><button class="btn btn-small btn-outline ok">ok</button></div>
                 </div>
             `;
         }
@@ -75,7 +75,7 @@ class Storage{
             document.querySelector("#elements").innerHTML+=`
                 <div class="element" data-id=${task.TaskId}>
                     <span id="content">${task.TaskContent}</span>
-                    <div id="button"><button class="btn btn-small btn-outline-success ok">ok</button></div>
+                    <div id="button"><button class="btn btn-small btn-outline ok">ok</button></div>
                 </div>
             `;
             Interface.setCounterValue();
