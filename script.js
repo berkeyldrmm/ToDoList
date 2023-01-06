@@ -114,6 +114,18 @@ button.addEventListener("click",()=>{
     displayDeleteAllButton();
 });
 
+text.addEventListener("keydown",(e)=>{
+    if(e.key==='Enter'){
+        const task=new NewTask(i,text.value);
+    i++;
+    const ui=new Interface();
+    ui.addNewTask(task);
+    Storage.addTasks(task);
+    executebuttons();
+    displayDeleteAllButton();
+    }
+})
+
 let executebuttons=()=>{
     okbuttons=document.querySelectorAll(".ok");
     if(okbuttons!==null){
